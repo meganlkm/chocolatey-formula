@@ -1,8 +1,3 @@
-bootstrap_chocolatey:
-  module.run:
-    chocolatey.bootstrap:
-      - force: true
-
 {% for package, context in pillar.get('chocolatey_packages', {}).items() %}
 "Install Chocolatey package {{ package }}":
   chocolatey.installed:
