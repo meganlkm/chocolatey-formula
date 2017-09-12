@@ -1,0 +1,11 @@
+chocolatey_packages:
+  git:
+    ## Minimal required value is package
+  dotnetcore-windowshosting:
+  teamcityagent:
+    version: 2017.1
+    package_args:
+      - 'serverurl=http://localhost:8111/'
+      - 'agentName=TCAgent'
+      - 'agentDir=C:\buildAgent'
+      - 'ownPort=9090'
